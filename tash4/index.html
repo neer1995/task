@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Disney</title>
+    <meta charset="utf-8">
+	<link rel="shortcut icon" type="image/png" href="logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="sidebar.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div id="wrapper">
+	
+
+    <nav class="navbar navbar-default" id="navwrapper" role="navigation">
+        <div class="container-fluid">
+		
+            <!-- Logo -->
+            <div class="navbar-header">
+			<a href="#" class="btn"  id="menu-toggle"><i class="fa fa-bars" aria-hidden="true" style="color:white; height:10px; font-size:25px; padding-top:6px"></i></a>
+						<a class="navbar-brand" ui-sref="cards" href="#"><img src="logo1.png" class="image_logo"/></a>
+						<ul class="nav navbar-nav" style="float:right;padding-right:18px;">
+			
+				</ul>
+					</div>
+ <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" style="color:white; font-size:15px;padding-right:50px">Signout</a></li>
+        </ul>
+            <!-- Menu Items -->
+            <div>
+               <!--  <ul class="nav navbar-nav">
+					
+                    <li><a style="color:#03ADF1; font-size:15px; font-style:Times New Roman;font-weight:bold;" href="#">Home</a></li>
+                    <li><a style="color:#03ADF1; font-size:15px; font-style:Times New Roman;font-weight:bold;" href="#">About</a></li>
+                    <li><a style="color:#03ADF1; font-size:15px; font-style:Times New Roman;font-weight:bold;" href="#">Contact</a></li>
+					
+                </ul> -->
+				
+            </div>
+			
+
+        </div>
+    </nav>
+	
+	
+	
+        <!-- sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+			
+                <li class="active"><a href="Account.html">Account</a></li>
+                <li style="color:#253B56;"><a href="#">Settings</a></li>
+                <li class="nav_hidden"><a href="#">Signout</a></li>
+				
+            </ul>
+        </div>
+
+        <!-- page content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                    
+                        <h3>Heading</h3>
+                        <p>content </p>
+						  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Menu toggle script -->
+    <script>
+        $("#menu-toggle").click( function (e){
+            e.preventDefault();
+            $("#wrapper").toggleClass("menuDisplayed");
+			
+        });
+		
+
+    </script>
+
+</body>
+</html>
