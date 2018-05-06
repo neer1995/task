@@ -1,0 +1,61 @@
+.body{
+	margin :-5px;
+	background:#03ADF1;	
+}
+.wrapper{
+background:#03ADF1;	
+}
+.nav1{
+	background:#3498DB;
+	height : 60px;
+	padding-left:50px;
+}
+.contain{
+	height:500px;
+	
+}
+
+.aside{
+	float :right;
+	width :85%;
+	padding :10px;
+}
+.left-bar{
+	width : 15%;
+	float : left;
+	padding :7px;
+	
+	margin:0
+}
+input{
+	 margin-bottom: 15px;
+    line-height: 0px;
+}
+html{
+	padding :2px;
+}
+.c2{
+	color:white;
+	padding :10px;
+}
+.c1{
+	color:white;
+	
+}
+
+.image_logo{
+	  padding-bottom: 25px;
+	 width:110px;
+	 height:60px;
+}
+
+li.right{
+    text-align: right;
+}
+.padding-body{
+	margin:0px;
+}
+
+
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://scheduleview-qa.disney.com/out -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Schedule View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <meta name="description" content="">
+    <!--<base href="/">--><base href=".">
+    <!-- Place /assets/favicon.c1bce850.ico and /assets/images/apple-touch-icon.0bec3a96.png in the root directory -->
+
+    <!-- build:css app.bowerDependencies.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css app.css -->
+        <!-- injector:css -->
+        <link rel="stylesheet" href="./Schedule View_files/ScheduleView.bowerComponents.764beb02.css">
+        <link rel="stylesheet" href="./Schedule View_files/main.510a46bb.css">
+        <!-- endinjector -->
+    <!-- endbuild -->
+</head>
+<body class="app ui-mobile ui-desktop ui-tablet ui-overlay-a">
+<!-- [if lt IE 9]>
+<div>
+    <div>
+        <strong>Please Upgrade Your Web Browser</strong>
+    </div>
+    <div>
+        We apologize for the inconvenience, but you are using an older version of your web browser and we are not able to provide you with the best possible experience.
+    </div>
+    <div>
+        <a href="http://windows.microsoft.com/ie" target="_blank">
+            Upgrade Microsoft Internet Explorer
+        </a>
+    </div>
+    <div>
+        <a href="https://www.google.com/chrome/browser" target="_blank">
+            Install Google Chrome
+        </a>
+    </div>
+        <div id="learnMoreLink">
+        <a href="https://www.mozilla.com/firefox" target="_blank">
+            Install Mozilla Firefox
+        </a>
+    </div>
+</div>
+<![endif]-->
+<div spinner="" id="spinner-1" class="hide">
+    <div class="spinner center">
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+    </div>
+</div>
+
+<div spinner="" id="spinner-2" class="hide">
+    <div class="spinner spinner-sm spinner-top">
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+    </div>
+</div>
+
+<div navigation="" id="main-navbar-container" class="navbar-container"><div class="container"> <header class="navbar-header"> <div return-to-landing=""><div class="return-to-landing-container"> <!-- ngIf: !returnToLandingVm.inHelpPage && !returnToLandingVm.navigateToScheduleView.isActive --><a class="link ng-scope" ng-click="returnToLandingVm.openMenu()" ng-if="!returnToLandingVm.inHelpPage &amp;&amp; !returnToLandingVm.navigateToScheduleView.isActive" tabindex="0"> <i class="landing-indicator kng-icon-font kng-ic_hd_menu_global_nav"></i> </a><!-- end ngIf: !returnToLandingVm.inHelpPage && !returnToLandingVm.navigateToScheduleView.isActive --> <!-- ngIf: !returnToLandingVm.inHelpPage && returnToLandingVm.navigateToScheduleView.isActive --> <!-- ngIf: returnToLandingVm.inHelpPage === true --> </div></div> <img src="./Schedule View_files/wdw.5ac55b8e.png" alt="Walt Disney World" class="nav-logo"> <a class="navbar-logout-button ng-binding" ng-bind="nav.language.getLocale(&#39;button.logout&#39;)" ng-click="nav.logout()" tabindex="0">Sign Out</a> <div class="bell-notification" bell-notification=""><!-- ngIf: bellNotificationVm.notification.show --><div ng-if="bellNotificationVm.notification.show" class="bell-notification-container ng-scope"> <a class="link" href="https://wdprdev.service-now.com/wdpr-cast/x_wdtpa_wdpr_hub_cast.do#!/notifications" target="_blank"> <div> <!-- ngIf: bellNotificationVm.notification.count > 0 --> <i class="workforce-icon-font wm-Icon_Notification_Bell notification-item"></i> </div> </a> </div><!-- end ngIf: bellNotificationVm.notification.show --></div> </header> </div></div>
+
+<!-- uiView:  --><div ui-view="" class="navbar-top-buffer ng-scope"><!-- uiView:  --><div ui-view="" class="ng-scope"><div class="call-out page container back flex ng-scope"> <div class="page-header order-0 padding clearfix"> <h1 ng-bind="outVm.title" class="page-title float-left ng-binding">Call-Out</h1> <!-- ngIf: outVm.session.access.callOutAccessLevel === outVm.accessStates.onBehalfOf --><div perner-search="" ng-if="outVm.session.access.callOutAccessLevel === outVm.accessStates.onBehalfOf" class="perner-search float-right ng-scope"><form name="castVm.searchForm" novalidate="" class="ng-pristine ng-valid ng-valid-required ng-valid-pattern"> <div class="form-group perner search-form-container"> <div class="row"> <span class="global-perner-search ng-binding" ng-bind="castVm.language.getLocale(&#39;text.on-behalf-of.description&#39;)">On Behalf Of</span> <span class="perner-search-name ng-binding" ng-bind="castVm.userSearchResult.firstName">Prasath</span> <span class="perner-search-name ng-binding" ng-bind="castVm.userSearchResult.lastName">Palanivel</span> </div> <div class="perner-input-container"> <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-valid-pattern ng-touched" name="perner" id="pernerInput" placeholder="Search by Perner" ng-model="castVm.session.searchPerner" autofocus="" tabindex="1" required="" ng-pattern="/^[0-9]{8,8}$/" aria-required="false" aria-invalid="false"> <div class="panel panel-alert ng-binding ng-hide" ng-show="castVm.searchForm.$submitted &amp;&amp; castVm.searchForm.perner.$error.required" ng-bind="castVm.language.getLocale(&#39;validation.perner.empty&#39;)" aria-hidden="true">Perner is required</div> <div class="panel panel-alert ng-hide" ng-show="castVm.searchForm.$error.pattern" aria-hidden="true"> 8 digit perner </div> </div> <div id="searchContainer" class="inline-block"> <button type="submit" id="searchBtn" class="custom-icon-search" ng-click="castVm.getCastMember(true)" tabindex="2"> </button> </div> </div> </form></div><!-- end ngIf: outVm.session.access.callOutAccessLevel === outVm.accessStates.onBehalfOf --> </div> <div class="cast-details order-1 hpadding inline-block"> <h3> <div ng-bind="outVm.session.member.name" class="inline-block ng-binding">Prasath Palanivel</div> <div ng-bind="outVm.session.member.perner" class="perner ng-binding">00929247</div> </h3> </div> <div class="timeoff-container order-2 hpadding inline-block"> <a ng-href="https://sap.disney.com/sap/bc/ui5_ui5/ui2/ushell/shells/abap/Fiorilaunchpad.html?sap-language=en&amp;sap-theme=ZMOB_UI5_TWDC@/sap/public/bc/themes/~client-800#ZmyTimeOff-display?&amp;/entitlements" target="_blank" class="font-navy" href="https://sap.disney.com/sap/bc/ui5_ui5/ui2/ushell/shells/abap/Fiorilaunchpad.html?sap-language=en&amp;sap-theme=ZMOB_UI5_TWDC@/sap/public/bc/themes/~client-800#ZmyTimeOff-display?&amp;/entitlements"> <img src="./Schedule View_files/open.2b3a6ace.png" alt="open" class="timeoff icon"> <span ng-bind="outVm.language.getLocale(&#39;section.out.text.timeoff&#39;)" class="timeoff text ng-binding">View Available Time Off</span> </a> <div class="info-container help-container float-right"> <a ng-href="https://wdprstage.service-now.com/wdpr-cast/x_wdtpa_labor_serv_view_content.do?kb_id=KB0010070" class="link" target="_blank" href="https://wdprstage.service-now.com/wdpr-cast/x_wdtpa_labor_serv_view_content.do?kb_id=KB0010070"> <span class="glyphicon glyphicon-info-sign light-bg"></span> <span ng-bind="outVm.language.getLocale(&#39;section.calendar.info.help&#39;)" class="ng-binding">Help</span> </a> </div> </div> <!-- ngIf: !outVm.shifts && outVm.access === true --><div ng-if="!outVm.shifts &amp;&amp; outVm.access === true" ng-show="outVm.shiftsLoaded" class="hpadding bpadding order-2 ng-scope" aria-hidden="false"> <div class="userNotification warning fill-container" role="alert" aria-live="assertive"> <div class="inline-block"> <div ng-bind="outVm.language.getLocale(&#39;notifications.message.noshifts&#39;)" class="ng-binding">There are no eligible shifts.</div> </div> </div> </div><!-- end ngIf: !outVm.shifts && outVm.access === true --> <!-- ngIf: outVm.access === true --><div class="order-2 ng-scope" ng-if="outVm.access === true" ng-show="outVm.shiftsLoaded" aria-hidden="false"> <form name="outVm.outForm" novalidate="" class="ng-pristine ng-valid"> <!-- ngIf: outVm.shifts --> </form> </div><!-- end ngIf: outVm.access === true --> <!-- ngIf: outVm.session.access.callOutAccessLevel === outVm.accessStates.noAccess --> <div ng-controller="ModalController" class="clearfix button-container padding order-4 ng-scope"> <div class="float-right flex mobile-only"> <button type="button" class="btn btn-default cancel-btn order-2 ng-binding" ng-click="cancelChanges()" ng-bind="outVm.language.getLocale(&#39;button.cancel&#39;)" tabindex="0">Cancel</button> <!-- ngIf: outVm.shifts --> </div> </div> </div></div></div>
+
+<div class="modal-backdrop fade dialogs-backdrop-default in" id="custom-backdrop"></div>
+
+<!-- build:js app.bowerDependencies.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js app.js -->
+    <!-- injector:js -->
+    <script src="./Schedule View_files/ScheduleView.bowerComponents.min.a69eb3c5.js.download"></script>
+    <script src="./Schedule View_files/ScheduleView.min.ef16ebcd.js.download"></script>
+    <!-- endinjector -->
+<!-- endbuild -->
+
+
+
+</body></html>
