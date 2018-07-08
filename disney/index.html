@@ -1,0 +1,139 @@
+<HTML lang="en">
+<head>
+<title>Disney</title>
+<link rel="shortcut icon" type="image/png" href="images/favicon.jpg"/>
+<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/waltograph" type="text/css"/>
+<link rel="stylesheet" media="screen" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
+
+
+</head>
+
+<body class="body">
+
+<div class="wrapper">
+
+	
+	<div id="main-navbar-container" class="navbar-container">
+	<div class="container-fluid" style="padding-left:100px;"> <header class="navbar-header"> 
+	
+	<a id="sidebarCollapse" class="btn navbar-btn">
+         <i class="fa fa-bars" aria-hidden="true" style="color:white; height:10px; font-size:25px; padding-bottom:20px;"></i>
+    </a> 
+	<!-- <a href="#" class="btn"  id="menu-toggle"><i class="fa fa-bars" aria-hidden="true" style="color:white; height:10px; font-size:25px; padding-bottom:20px"></i></a> -->
+	<!-- <img class="nav_logo"  src="images/logo1.png" alt="Walt Disney World"/>  -->
+	
+	
+	 </header> 
+	 <a class="navbar-logout-button" style="float:right; padding-right:100px;">Sign Out</a>
+	 </div>
+	 </div>
+	
+		
+    <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                
+
+                
+
+                <ul class="list-unstyled components">
+                   
+                    <!-- <li class="active"> -->
+                        <!-- <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a> -->
+                        <!-- <ul class="collapse list-unstyled" id="homeSubmenu"> -->
+                            <!-- <li><a href="#">Home 1</a></li> -->
+                            <!-- <li><a href="#">Home 2</a></li> -->
+                            <!-- <li><a href="#">Home 3</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </li> -->
+                  
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="Account.html">Account</a>
+                    </li>
+					  <li >
+                        <a class="nav_hidden" href="Account.html">Signout</a>
+                    </li>
+                </ul>
+
+                
+            </nav>
+			
+		  <!-- <!-- page content -->
+		   <!--Card-->
+      <div class="card animated fadeIn">
+         <center><img class="center animated rollIn" src="ava.png" alt="avatar"></center>
+         <hr>
+         <div class="name">
+            Contrak
+         </div>
+         
+         <p class="icons animated pulse">
+            
+            <a href="https://plus.google.com/u/0/112966876017615905321" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                
+            </span>
+            </a>
+            <a href="https://www.instagram.com/abhijeet_n7/" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                
+            </span>
+            </a>
+            <a href="https://github.com/shrinathnayak07" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+               
+            </span>
+            </a>
+         </p>
+		 
+      </div>
+		  <!-- end -->
+		    
+			</div>
+			
+			 <div class="overlay"><p></p></div>
+	
+ <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    <!-- theme: "minimal" -->
+                });
+
+                $('.overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script>
+		
+
+
+</body>
+</HTML>
